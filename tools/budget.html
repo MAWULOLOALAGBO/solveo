@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur de budget mensuel | Solveo</title>
+
+    <link rel="stylesheet" href="../css/tools.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">Solveo</div>
+        <nav class="nav">
+            <a href="../index.html">Accueil</a>
+            <a href="index.html">Outils</a>
+            <a href="../blog/index.html">Blog</a>
+        </nav>
+    </header>
+
+    <!-- CONTENU -->
+    <section class="tool-container">
+
+        <h1>Simulateur de budget mensuel</h1>
+        <p class="subtitle">Calcule ton reste à vivre en fonction de tes revenus et dépenses.</p>
+
+        <!-- FORMULAIRE -->
+        <div class="tool-box">
+
+            <label for="revenus">Revenus mensuels (€)</label>
+            <input type="number" id="revenus" placeholder="Exemple : 1800">
+
+            <label for="loyer">Loyer (€)</label>
+            <input type="number" id="loyer" placeholder="Exemple : 600">
+
+            <label for="charges">Charges (électricité, internet...) (€)</label>
+            <input type="number" id="charges" placeholder="Exemple : 120">
+
+            <label for="courses">Courses (€)</label>
+            <input type="number" id="courses" placeholder="Exemple : 250">
+
+            <label for="transport">Transport (€)</label>
+            <input type="number" id="transport" placeholder="Exemple : 60">
+
+            <button onclick="calculBudget()">Calculer</button>
+        </div>
+
+        <!-- RÉSULTAT -->
+        <div id="result" class="result-box"></div>
+
+        <!-- SECTION SEO -->
+        <section class="seo">
+            <h2>Comment fonctionne le calcul du budget ?</h2>
+            <p>
+                Le budget mensuel correspond à la différence entre tes revenus et tes dépenses fixes.
+                Ce simulateur t’aide à visualiser ton reste à vivre et à mieux gérer ton argent.
+            </p>
+        </section>
+
+        <!-- SUGGESTIONS -->
+        <section class="suggestions">
+            <h3>Tu peux aussi utiliser :</h3>
+            <div class="suggest-grid">
+                <a href="salaire.html" class="suggest-card">Calcul salaire net</a>
+                <a href="convertisseur.html" class="suggest-card">Convertisseur</a>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- CHATBOT -->
+    <div class="chatbot-button" onclick="toggleChatbot()">💬</div>
+    <div id="chatbotWindow" class="chatbot-window">
+        <div class="chatbot-header">Solveo Bot</div>
+        <div id="chatbotMessages" class="chatbot-messages"></div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbotText" placeholder="Écris ici...">
+            <button onclick="sendChatbot()">Envoyer</button>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../js/main.js"></script>
+    <script src="../chatbot/chatbot.js"></script>
+    <script src="tools.js"></script>
+
+</body>
+</html>
