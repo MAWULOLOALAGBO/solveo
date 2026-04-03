@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solveo — Résous ton problème en 30 secondes</title>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">Solveo</div>
+
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="tools/index.html">Outils</a>
+            <a href="blog/index.html">Blog</a>
+        </nav>
+
+        <a href="tools/index.html" class="btn-header">Utiliser un outil</a>
+    </header>
+
+    <!-- SECTION HERO -->
+    <section class="hero">
+        <h1>Résous ton problème en 30 secondes</h1>
+        <p>Tape ce dont tu as besoin, on s’occupe du reste</p>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Exemple : salaire, budget, convertir...">
+            <button onclick="launchSearch()">Rechercher</button>
+        </div>
+
+        <div id="searchSuggestions" class="suggestions"></div>
+    </section>
+
+    <!-- OUTILS POPULAIRES -->
+    <section class="popular-tools">
+        <h2>Outils populaires</h2>
+
+        <div class="tools-grid">
+            <a href="tools/salaire.html" class="tool-card">Calcul salaire</a>
+            <a href="tools/budget.html" class="tool-card">Budget</a>
+            <a href="tools/convertisseur.html" class="tool-card">Convertisseur</a>
+            <a href="tools/generateur.html" class="tool-card">Générateur texte</a>
+        </div>
+    </section>
+
+    <!-- COMMENT ÇA MARCHE -->
+    <section class="how">
+        <h2>Comment ça marche ?</h2>
+
+        <div class="steps">
+            <div class="step">1. Tu écris ton problème</div>
+            <div class="step">2. Solveo te propose une solution</div>
+            <div class="step">3. Tu obtiens ton résultat</div>
+        </div>
+    </section>
+
+    <!-- CHATBOT -->
+    <div class="chatbot-button" onclick="toggleChatbot()">
+        💬
+    </div>
+
+    <div id="chatbotWindow" class="chatbot-window">
+        <div class="chatbot-header">Solveo Bot</div>
+        <div id="chatbotMessages" class="chatbot-messages"></div>
+
+        <div class="chatbot-input">
+            <input type="text" id="chatbotText" placeholder="Écris ici...">
+            <button onclick="sendChatbot()">Envoyer</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Solveo — Tous droits réservés</p>
+        <a href="#">Mentions légales</a> • 
+        <a href="#">Contact</a>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/navigation.js"></script>
+    <script src="js/search.js"></script>
+    <script src="chatbot/chatbot.js"></script>
+
+</body>
+</html>
