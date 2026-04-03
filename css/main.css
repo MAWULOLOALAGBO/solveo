@@ -2,6 +2,11 @@
    STYLE GLOBAL — SOLVEO
    Thème dark élégant + brillances
 --------------------------------*/
+.header.scrolled {
+    background: rgba(15, 15, 17, 0.85);
+    backdrop-filter: blur(6px);
+    transition: 0.25s ease;
+}
 
 :root {
     --bg: #0f0f11;
