@@ -1,0 +1,16 @@
+{
+    "salaire": "Tu peux calculer ton salaire ici 👉 /tools/salaire.html",
+    "calcul salaire": "Voici l’outil qu’il te faut 👉 /tools/salaire.html",
+    "salaire net": "Utilise cet outil 👉 /tools/salaire.html",
+
+    "budget": "Voici le simulateur de budget 👉 /tools/budget.html",
+    "gestion budget": "Tu peux gérer ton budget ici 👉 /tools/budget.html",
+
+    "convertir": "Voici le convertisseur 👉 /tools/convertisseur.html",
+    "conversion": "Convertis ce que tu veux ici 👉 /tools/convertisseur.html",
+
+    "texte": "Voici le générateur de texte 👉 /tools/generateur.html",
+    "générateur": "Génère ton texte ici 👉 /tools/generateur.html",
+
+    "default": "Je peux t’aider à trouver un outil. Essaie : salaire, budget, convertir, texte."
+}
